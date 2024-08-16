@@ -1,5 +1,3 @@
-package com.example
-
 import org.apache.pekko.actor.ActorSystem
 import org.apache.pekko.http.scaladsl.Http
 import org.apache.pekko.http.scaladsl.server.Directives._
@@ -7,7 +5,7 @@ import org.apache.pekko.stream.ActorMaterializer
 
 import scala.io.StdIn
 
-object WebApi {
+object Main {
   def main(args: Array[String]): Unit = {
     // ActorSystemとMaterializerの作成
     implicit val system = ActorSystem("web-api-system")
